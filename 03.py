@@ -1,6 +1,7 @@
 """
     路径参数 - 类型注解 
     Path: ...(必填), gt/ge(大于/大于等于), lt/le(小于/小于等于), description(描述), min_length/max_length(最小长度/最大长度)
+    如需填写默认值，可以将...换成value
 """
 
 from fastapi import FastAPI, Path
