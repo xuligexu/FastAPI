@@ -1,3 +1,8 @@
+"""
+    fastapi 基础框架
+"""
+
+
 from fastapi import FastAPI
 import uvicorn
 
