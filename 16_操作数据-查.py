@@ -14,11 +14,9 @@ from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker, Asyn
 
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
-from sqlalchemy import String, Float
-
 from datetime import datetime
 
-from sqlalchemy import DateTime, func, select
+from sqlalchemy import DateTime, func, select, String, Float
 
 import uvicorn
 
@@ -134,6 +132,7 @@ async def get_book_list(
 
 # -------------------------------------------
 # where() 条件查询
+
 # 需求: 路径参数 书籍id
 @app.get("/book/get_book/{book_id}")
 async def get_book_list(
